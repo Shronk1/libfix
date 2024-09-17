@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "LibFix",
+  "version": "1.0",
+  "description": "Plan lekcji otwiera się w tejsamej karcie",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://synergia.librus.pl/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
